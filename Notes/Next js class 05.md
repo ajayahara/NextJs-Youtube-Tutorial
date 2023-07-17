@@ -39,4 +39,15 @@ Next js supports two forms of pre-rendering.
             For dynamic route  u have to write getStaticPaths() and export it. You can see the next-app-06 post example for better understanding.
             In the return statement of getStaticPaths there is a key called fallback whose value is a boolean .Lets see what it is doing.
                 Case-1:-fallback set to false->
+                    1.The paths return from getStaticPaths will be rendered to html at build time by getStaticProps.
+                    2.If fallback iss set to false,then any paths not returned by getStaticPaths will result 404 page.
+                Case-2:-fallback set to true->
+                    1.The paths return from getStaticPaths will be rendered to html at build time by getStaticProps.
+                    2.The path that have not been generated at build time will not result 404 page .Instead, Next.js will serve a "fallback" version of the page on first request to such a path.
+                    3.in the background Next.js will statically generate the requested path Html and JSON.This includes running getStaticProps.
+                    4.When that's done,the browser receives the JSON for the generated path.This will be used to automatically render the page with the required props. From the user's perspective ,The page will be swapped from the fallback page to the full page.
+                    5.At the same time,next.js keeps the track of the new list of pre-rendered pages.Subsequent request to the same path will serve the generated page,just like other pages pre-rendeed at the build time.
+                    (see next-app-07 for details)
+                Case-3:-fallback set to blocking->
+
 

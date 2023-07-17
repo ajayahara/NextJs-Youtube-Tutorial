@@ -1,0 +1,46 @@
+{
+  "dashboard":{
+    "posts":260,
+    "likes":2000,
+    "comments":205,
+    "name":"Ajaya"
+  },
+  "news":[
+    {
+      "id":"1",
+      "title":"News Article 1",
+      "description":"Description 1",
+      "category":"sports"
+    },
+    {
+      "id":"2",
+      "title":"News Article 2",
+      "description":"Description 2",
+      "category":"politics"
+    },
+    {
+      "id":"3",
+      "title":"News Article 3",
+      "description":"Description 3",
+      "category":"sports"
+    }
+  ],
+  "products": [
+    {
+      "id":"1",
+      "name":"Motorola",
+      "price":3500
+    },
+    {
+      "id":"2",
+      "name":"Vivo",
+      "price":9500
+    },
+    {
+      "id":"3",
+      "name":"Realme",
+      "price":11500
+    }
+
+  ]
+}
