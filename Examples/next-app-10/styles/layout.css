@@ -1,0 +1,16 @@
+.layout-header{
+    color:yellow;
+    font-size: 20px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.layout-footer{
+    color:green;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 20px;
+}
